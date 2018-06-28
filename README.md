@@ -1,6 +1,6 @@
 # LinguagensTrabalho5
 
-##DuckWorld
+## DuckWorld
 O aplicativo DuckWorld é formado por regras e fatos que demonstra a estrutura de um programa interativo em Prolog, que utiliza predicados dinâmicos.
 O jogo utiliza uma estrutura similar a de outros jogos como Zork e Icesus.
 
@@ -13,7 +13,7 @@ Exemplos de histórias novas: (a) cenas de filmes (Harry Potter, Indiana Jones, 
 
 As alterações devem ser realizadas respeitando o enredo escolhido.
 
-##Avaliação
+## Avaliação
 Os itens abaixo serão avaliados:
 
 a. [1 pt] apresentar mensagens de texto corretas e adequadas 
@@ -50,7 +50,7 @@ Trabalhos iguais ou similares recebem nota ZERO.
 Trabalhos de grupos que não sabem explicar o código ou com código disponível na Internet recebem nota ZERO.
 Trabalho com referências consultadas omitidas, tem pontuação dividida por 2.
 
-##Referências
+## Referências
 DuckWorld
 http://www.amzi.com/manuals/samples/prolog/duckworld/
 
