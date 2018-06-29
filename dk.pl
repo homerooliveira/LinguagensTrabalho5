@@ -7,10 +7,13 @@
 % http://www.amzi.com/manuals/samples/prolog/duckworld/dw_data.pro
 nextto(pen, yard).
 nextto(yard, house).
+nextto(pen, gardem).
 
 loc(egg,pen).
 loc(ducks,pen).
 loc(you,pen).
+loc(bird, gardem).
+loc(cat, pen).
 
 move(Item, Place) :-
 	retract( loc(Item, _) ),
@@ -27,9 +30,20 @@ done :-
 	loc(you, house),
 	loc(egg, you),
 	write("Thanks for getting the egg."), nl.
+done :- 
+    loc(you, house),
+    loc(cat,yard),
+    write("Thanks for saving the bird."), nl.
+done :- 
+    loc(you, house),
+    loc(egg, you),
+    loc(cat, yard)
+    write("Thanks for getting the egg and saving the bird"), nl. 
+    
 
 demons :-
 	ducks,
+    cat,
 	fox.
 
 ducks :-
@@ -39,12 +53,18 @@ ducks :-
 	write("The ducks have run into the yard."), nl.
 ducks.
 
+cat :-
+	loc(bird, gardem),
+	loc(you, pen),
+    move(cat, gardem),
+    write("The cat have run into the gardem."), nl.
+cat.
+    
 fox :-
 	loc(ducks, yard),
 	loc(you, house),
 	write("The fox has taken a duck."), nl.
 fox.
-
 
 goto(X) :-
 	loc(you, L),
@@ -61,6 +81,14 @@ chase(ducks) :-
 	write("The ducks are back in their pen."), nl.
 chase(_):-
 	write("No ducks here."), nl.
+
+scare(cat) :-
+	loc(cat, L),
+	loc(you, L),
+    move(cat, yard),
+	write("You scare the cat."), nl.
+scare(_):-
+	write("No cat here."), nl.
 
 take(X) :-
 	loc(you, L),
