@@ -7,7 +7,7 @@
 % http://www.amzi.com/manuals/samples/prolog/duckworld/dw_data.pro
 nextto(pen, yard).
 nextto(yard, house).
-nextto(pen, gardem).
+nextto(yard, gardem).
 
 loc(egg,pen).
 loc(ducks,pen).
@@ -39,7 +39,6 @@ done :-
     loc(egg, you),
     loc(cat, yard),
     write("Thanks for getting the egg and saving the bird"), nl. 
-    
 
 demons :-
 	ducks,
@@ -133,6 +132,7 @@ report :-
 
 do(goto(X)) :- !, goto(X).
 do(chase(X)) :- !, chase(X).
+do(scare(X)) :- !, scare(X).
 do(take(X)) :- !, take(X).
 do(look) :- !, look.
 do(help) :- !, instructions.
@@ -162,6 +162,7 @@ instructions :-
 	write("  goto(X). - where X is a place to go to."), nl,
 	write("  take(X). - where X is a thing to take."), nl,
 	write("  chase(X). - chasing ducks sends them to the pen."), nl,
+    write("  scare(X). - scare cat and send them to the yard."), nl,
 	write("  look. - the state of the game."), nl,
 	write("  help. - this information."), nl,
 	write("  quit. - exit the game."), nl,
