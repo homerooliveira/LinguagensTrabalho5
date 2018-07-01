@@ -37,7 +37,7 @@ done :-
 done :- 
     loc(you, house),
     loc(egg, you),
-    loc(cat, yard)
+    loc(cat, yard),
     write("Thanks for getting the egg and saving the bird"), nl. 
     
 
