@@ -6,8 +6,8 @@
 
 % http://www.amzi.com/manuals/samples/prolog/duckworld/dw_data.pro
 nextto(pen, yard).
-nextto(yard, house).
 nextto(yard, gardem).
+nextto(gardem, house).
 
 loc(egg,pen).
 loc(ducks,pen).
@@ -53,8 +53,8 @@ ducks :-
 ducks.
 
 cat :-
-	loc(bird, gardem),
-	loc(you, pen),
+    loc(cat, yard),
+	loc(you, yard),
     move(cat, gardem),
     write("The cat have run into the gardem."), nl.
 cat.
@@ -85,7 +85,7 @@ scare(cat) :-
 	loc(cat, L),
 	loc(you, L),
     move(cat, yard),
-	write("You scare the cat."), nl.
+	write("You scare the cat and his back to the yard ."), nl.
 scare(_):-
 	write("No cat here."), nl.
 
