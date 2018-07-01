@@ -26,6 +26,11 @@ connect(X,Y) :-
 connect(X,Y) :-
         nextto(Y,X).
 
+done :- 
+    loc(you, house),
+    loc(egg, you),
+    loc(cat, yard),
+    write("Thanks for getting the egg and saving the bird"), nl. 
 done :-
 	loc(you, house),
 	loc(egg, you),
@@ -34,11 +39,6 @@ done :-
     loc(you, house),
     loc(cat,yard),
     write("Thanks for saving the bird."), nl.
-done :- 
-    loc(you, house),
-    loc(egg, you),
-    loc(cat, yard),
-    write("Thanks for getting the egg and saving the bird"), nl. 
 
 demons :-
 	ducks,
