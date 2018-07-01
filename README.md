@@ -16,28 +16,28 @@ As alterações devem ser realizadas respeitando o enredo escolhido.
 ## Avaliação
 Os itens abaixo serão avaliados:
 
-a. [1 pt] apresentar mensagens de texto corretas e adequadas 
+ - [ ] a. [1 pt] apresentar mensagens de texto corretas e adequadas 
 Indicar descrições e pistas ao jogador.
 
-b. [2 pt] processar nove ou mais comandos
+ - [ ] b. [2 pt] processar nove ou mais comandos
 Reconhecer e ativar os comandos originais acrescidos de ao menos um comando novo.
 
-c. [1 pt] escolha de enredo
+ - [ ] c. [1 pt] escolha de enredo
 Escolha de enredo interessante que mantenha a atenção do jogador.
 
-d. [2 pt] manter quatro ou mais personagens
+ - [ ] d. [2 pt] manter quatro ou mais personagens
 Incluir pessoas, animais e dispositivos que possuam ações próprias.
 
-e. [2 pt] manter quatro ou mais salas
+ - [ ] e. [2 pt] manter quatro ou mais salas
 Descrever salas ou lugares que apoiam o enredo.
 
-f. [1 pt] permitir três ou mais finais de jogo
+ - [ ] f. [1 pt] permitir três ou mais finais de jogo
 Permitir mais de uma forma de ganhar e/ou mais de uma forma de perder o jogo.
 
-g. [1 pt] manter nome do usuário e total de comandos
+ - [ ] g. [1 pt] manter nome do usuário e total de comandos
 Ao final do jogo, apresentar a lista de comandos do jogador (Dica: utilizar lista ou predicados dinâmicos).
 
-h. [1 pt] eventos ou reações probabilísticas
+ - [ ] h. [1 pt] eventos ou reações probabilísticas
 Oferecer reações diferentes, como probabilidade de falha ou de reação adversa.
 
 Pontuação disponível: 12 pontos
