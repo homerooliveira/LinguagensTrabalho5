@@ -13,7 +13,7 @@ loc(egg,pen).
 loc(ducks,pen).
 loc(you,pen).
 loc(bird, gardem).
-loc(cat, pen).
+loc(cat, yard).
 
 move(Item, Place) :-
 	retract( loc(Item, _) ),
