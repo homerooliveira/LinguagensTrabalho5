@@ -1,1 +1,9 @@
-
+take(egg).
+goto(yard).
+look.
+chase(ducks).
+goto(gardem).
+look.
+scare(cat).
+look.
+goto(house).
